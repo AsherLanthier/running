@@ -16,4 +16,5 @@ function addData(){
     formData.append('Miles', miles);
 
     fetch(URL, {method:'POST', body: formData});
+    alert("Your miles for today have been recorded.");
 }
