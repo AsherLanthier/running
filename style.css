@@ -28,3 +28,17 @@ body{
 #enter_miles:active{
     background-color: white;
 }
+
+#sheet_link{
+    display: flex;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    background-color: white;
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
