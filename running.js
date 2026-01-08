@@ -8,7 +8,7 @@ var date_display = document.getElementById('date_display');
 date_display.textContent = today;
 
 function addData(){
-    const URL = 'https://script.google.com/macros/s/AKfycbw9ULNdVo5jpaj9oGstddq03O5-L3f_iA0hLs7gHfm9/dev';
+    const URL = 'https://script.google.com/macros/s/AKfycbwDcII2S5gBNlFk-fdgLr2yAaHxgeDdiV460vhjDH0ZgROS4fP0M52rZiTYnXaUlutcsw/exec';
     var miles = document.getElementById('miles_input').value;
 
     let formData = new FormData();
