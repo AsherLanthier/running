@@ -1,20 +1,23 @@
+var form = document.getElementById('sheetdb-form');
 var full_date = new Date();
 var today = full_date.toLocaleDateString('en-US', {
     month: '2-digit',
     day: '2-digit',
     year: 'numeric'
 })
-var date_display = document.getElementById('date_display');
-date_display.textContent = today;
+var date_display = document.getElementById('date_input');
+date_display.value = today;
 
-function addData(){
-    const URL = 'https://script.google.com/macros/s/AKfycbwDcII2S5gBNlFk-fdgLr2yAaHxgeDdiV460vhjDH0ZgROS4fP0M52rZiTYnXaUlutcsw/exec';
-    var miles = document.getElementById('miles_input').value;
+form.addEventListener("submit", e => {
+    e.preventDefault();
+    fetch(form.action, {
+        method: "POST",
+        body: new FormData(document.getElementById("sheetdb-form")),
+    }).then(
+        response => response.json()
+    ).then((html) => {
+        
+    });
 
-    let formData = new FormData();
-    formData.append('Date', today);
-    formData.append('Miles', miles);
-
-    fetch(URL, {method:'POST', body: formData});
-    alert("Your miles for today have been recorded.");
-}
+    alert('Your miles for today have been recorded.');
+});
