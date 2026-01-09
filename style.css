@@ -8,6 +8,11 @@ body{
     
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
 #miles_input{
     height: 40px;
 }

@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>RUNNING</title>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
@@ -11,12 +12,22 @@
                 <label for="date"><b>Date:</b></label>
                 <input type="text" name="data[Date]" id="date_input">
 
+                <br>
+                <br>
+
                 <Label for="miles"><b>Miles:</b></Label>
                 <input type="number" name="data[miles]" id="miles_input">
 
-                <button type="submit">ENTER</button>
+                <br>
+                <br>
+
+                <button type="submit" id="enter_miles">ENTER</button>
             </div>
         </form>
+
+        <br>
+
+        <a href="https://docs.google.com/spreadsheets/d/1detzH3cx5-STCckv_SRyq4dp-sUoXtDvlzzNRMuD4ZI/edit?gid=1171758723#gid=1171758723&range=B2:C5" id="sheet_link">View Total Miles</a>
         <script src="running.js"></script>
     </body>
 </html>
