@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Running Log</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="running.png">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RUNNING</title>
     </head>
 
-    <Body>
-        <h1>Enter Today's Miles:</h1>
-        <h2 id="date_display"></h2>
-        <input type="number" id="miles_input" placeholder="Miles">
-        <br>
-        <button onclick="addData()" id="enter_miles">Enter</button>
-        <br>
-        <br>
-        <div id="sheet_link">
-            <a href="https://docs.google.com/spreadsheets/d/1m2mA-avR-MshNWT4Ji0mjwSBijwL59K4QfH6WAfgYEA/edit?gid=614667665#gid=614667665&range=B2:C5">View Total Miles</a>
-        </div>
+    <body>
+        <form action="https://sheetdb.io/api/v1/g6wzd5rp5l707" method="post" id="sheetdb-form">
+            <div class = "container">
+                <h1>Enter Miles</h1>
+                <label for="date"><b>Date:</b></label>
+                <input type="text" name="data[Date]" id="date_input">
+
+                <Label for="miles"><b>Miles:</b></Label>
+                <input type="number" name="data[miles]" id="miles_input">
+
+                <button type="submit">ENTER</button>
+            </div>
+        </form>
         <script src="running.js"></script>
-    </Body>
+    </body>
 </html>
